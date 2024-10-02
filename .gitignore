@@ -1,0 +1,5 @@
+# Virtual environment directory
+.venv/
+
+# CSV files - Ensure no data gets committed
+*.csv
