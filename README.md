@@ -20,7 +20,3 @@ This tool is to make it easier to convert Teamwork timelogs into Xero invoices f
 4. Fill in the remaining fields (Invoice number, unit amount, currnecy, and aggregation option).
 5. Click "Generate Invoice". The file is saved in the same directory as the script.
 6. Import the invoice into Xero.
-
-## Known issues
-
-- (Agg - Day) If a task is worked on multiple times a day it appears in the invoice multiple times in the same row.

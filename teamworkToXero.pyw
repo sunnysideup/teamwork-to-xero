@@ -138,7 +138,7 @@ class InvoiceGenerator(QWidget):
                 grouped = df.groupby('Date Label').agg({
                     'Company': 'first',  # Assuming all rows within a date have the same company
                     'Decimal Hours': 'sum',  # Sum the hours worked per date
-                    'Task or Description': lambda x: '\n'.join(x)  # Concatenate tasks for the same date
+                    'Task or Description': lambda x: '\n'.join(sorted(set(x)))  # Concatenate tasks for the same date
                 }).reset_index()
 
                 # Prepare the Xero invoice format (grouped by date)
